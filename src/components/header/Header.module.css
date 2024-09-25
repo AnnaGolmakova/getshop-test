@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__logo {
+  font-weight: 900;
+  font-size: 21.49px;
+  line-height: 36.84px;
+  padding: 18px 48px 20px 48px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.header__menu-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+
+.header__menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
