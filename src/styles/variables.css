@@ -1,4 +1,27 @@
 :root {
-  --background: #ffffff;
+  --white: #ffffff;
+  --gray-01: #a4adac;
+  --gray-02: #d6dbdb;
+  --gray-03: #e8edee;
+  --gray-04: #f2f6f6;
+  --black: #1d1d1b;
+  --orange: #ff5900;
+  --dark-orange: #e0570e;
+  --error: #ff4026;
+
+  --background: var(--gray-03);
   --foreground: #171717;
+  --padding-page: 110px;
+}
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    --padding-page: 40px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  :root {
+    --padding-page: 16px;
+  }
 }
