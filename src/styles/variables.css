@@ -11,7 +11,7 @@
 
   --background: var(--gray-03);
   --foreground: #171717;
-  --padding-page: 110px;
+  --padding-page: 140px;
 }
 
 @media only screen and (max-width: 1024px) {
