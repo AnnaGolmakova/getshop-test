@@ -36,25 +36,23 @@ export default function Header() {
   return (
     <header className={styles["header"]}>
       <div className={styles["header__logo"]}>Logo</div>
-      <MenuList />
+      {!isOpen && <MenuList />}
       <button
+        aria-label="Меню"
         className={styles["menu-button"]}
         onClick={() => {
           setIsOpen(true);
         }}
       />
-      {isOpen &&
-        isBrowser &&
-        createPortal(
-          <Sidebar
-            onClose={() => {
-              setIsOpen(false);
-            }}
-          >
-            <MenuList isInSidebar />
-          </Sidebar>,
-          document.body,
-        )}
+      {isOpen && (
+        <Sidebar
+          onClose={() => {
+            setIsOpen(false);
+          }}
+        >
+          <MenuList isInSidebar />
+        </Sidebar>
+      )}
     </header>
   );
 }

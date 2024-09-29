@@ -6,15 +6,28 @@
 }
 
 .header__logo {
-  display: flex;
+  display: grid;
   place-items: center;
   border-radius: 10px;
   background-color: #ffffff;
-  padding: 0px 48px 0px 48px;
+  width: 161px;
+  height: 40px;
   font-weight: 900;
   font-size: 21.49px;
   line-height: 36.84px;
+  letter-spacing: 0.77px;
+  text-align: center;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 640px) {
+  .header__logo {
+    width: 113px;
+    height: 28px;
+    font-size: 15.08px;
+    line-height: 25.85px;
+    letter-spacing: 0.54px;
+  }
 }
 
 .header__menu {
@@ -58,9 +71,9 @@
 .menu-button {
   display: none;
   cursor: pointer;
-  border: 2px solid var(--orange);
-  border-radius: 10px;
+  border: none;
   background: url("/assets/menu.svg") no-repeat center center;
+  background-size: 100% 100%;
   width: 44px;
   height: 44px;
 }
@@ -71,5 +84,12 @@
   }
   .header__menu:not(.header__menu_sidebar) {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .menu-button {
+    width: 32px;
+    height: 32px;
   }
 }
