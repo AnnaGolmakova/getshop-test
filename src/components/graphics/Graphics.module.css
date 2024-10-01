@@ -1,0 +1,43 @@
+.graphics {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.graphics__line {
+  position: relative;
+  z-index: 0;
+  background-color: var(--orange);
+  width: 100%;
+  height: 2px;
+}
+
+.graphics__line::before,
+.graphics__line::after {
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: var(--orange);
+  width: 12px;
+  height: 12px;
+  content: " ";
+}
+
+.graphics__line::before {
+  left: 0;
+}
+.graphics__line::after {
+  right: 0;
+}
+
+.graphics__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(/assets/rectangle.svg) no-repeat;
+  width: 120px;
+  height: 120px;
+}
