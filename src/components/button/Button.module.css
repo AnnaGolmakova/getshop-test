@@ -1,0 +1,25 @@
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--black);
+  padding: 12px 45px;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+}
+
+.button:hover {
+  background-color: var(--gray-01);
+}
+
+.primary {
+  background-color: var(--orange);
+}
+
+.primary:hover {
+  background-color: var(--dark-orange);
+}
