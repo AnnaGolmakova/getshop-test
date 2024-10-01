@@ -14,6 +14,12 @@
   --padding-page: 140px;
 }
 
+@media only screen and (max-width: 1280px) {
+  :root {
+    --padding-page: 80px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   :root {
     --padding-page: 40px;

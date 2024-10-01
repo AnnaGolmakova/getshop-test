@@ -1,13 +1,14 @@
 .revenue {
   display: grid;
-  grid-template-columns: 460px 560px;
-  gap: 140px;
+  grid-template-columns: minmax(360px, 460px) 560px;
+  justify-content: space-between;
+  gap: 20px;
   margin: 180px 0 0 0;
 }
 
 @media only screen and (max-width: 1024px) {
   .revenue {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     margin: 120px 0 0 0;
   }
 }
