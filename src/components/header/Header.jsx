@@ -7,21 +7,26 @@ import styles from "./Header.module.css";
 function MenuList({ isInSidebar = false }) {
   return (
     <nav
-      className={clsx(
-        styles["header__menu"],
-        isInSidebar && styles["header__menu_sidebar"],
-      )}
+      className={clsx(styles["menu"], isInSidebar && styles["menu_sidebar"])}
     >
       <ul
         className={clsx(
-          styles["header__menu-list"],
-          isInSidebar && styles["header__menu-list_sidebar"],
+          styles["menu__list"],
+          isInSidebar && styles["menu__list_sidebar"],
         )}
       >
-        <li className={styles["header__menu-item"]}>
+        <li
+          className={clsx(
+            styles["menu__item"],
+          )}
+        >
           <a href="#balance">Преимущества</a>
         </li>
-        <li className={styles["header__menu-item"]}>
+        <li
+          className={clsx(
+            styles["menu__item"],
+          )}
+        >
           <a href="#benefits">Как работаем</a>
         </li>
       </ul>
@@ -39,7 +44,7 @@ export default function Header() {
       {!isOpen && <MenuList />}
       <button
         aria-label="Меню"
-        className={styles["menu-button"]}
+        className={styles["menu__button"]}
         onClick={() => {
           setIsOpen(true);
         }}
