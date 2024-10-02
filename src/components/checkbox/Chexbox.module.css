@@ -1,26 +1,15 @@
 .checkbox {
   display: flex;
   flex-direction: row;
-  margin: 0 0 48px 0;
-}
-
-@media only screen and (max-width: 1024px) {
-  .checkbox {
-    margin: 0 0 64px 0;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .checkbox {
-    margin: 0 0 32px 0;
-  }
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .checkbox__label {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  gap: 3px;
+  gap: 8px;
 }
 
 @media only screen and (max-width: 1024px) {

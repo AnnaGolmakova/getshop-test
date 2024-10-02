@@ -17,10 +17,10 @@ export default function Benefits() {
             Инструменты контроля качества трафика.
           </li>
           <li className={styles["benefits__list-item"]}>
-            Ежемесячные автоматические отчёты для каждого правообладателя.
+            Ежемесячные автоматические отчёты для каждого правообладателя.
           </li>
         </ul>
-        <Button label="Заказать звонок" />
+        <Button className={styles["button-main"]} label="Заказать звонок" />
       </div>
       <Image
         src="/assets/Screen.png"

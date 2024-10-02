@@ -27,7 +27,9 @@
 
 @media only screen and (max-width: 1024px) {
   .balance__title {
+    align-self: center;
     margin: 0 0 87px 0;
+    max-width: 512px;
     font-size: 28px;
     line-height: 33.6px;
   }
@@ -76,9 +78,17 @@
 
 .balance__item::before {
   background-image: url("/assets/arrow-icon.svg");
+  background-size: 100% 100%;
   width: 24px;
   height: 24px;
   content: " ";
+}
+
+@media only screen and (max-width: 1024px) {
+  .balance__item::before {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .balance__subtitle {

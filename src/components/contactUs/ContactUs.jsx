@@ -48,7 +48,7 @@ export default function ContactUs() {
                   <a className={styles["contact-us__link"]} href="#">
                     политикой конфиденциальности
                   </a>{" "}
-                  и согласен(на) на обработку{" "}
+                  и согласен(на) на обработку{" "}
                   <a className={styles["contact-us__link"]} href="#">
                     персональных данных
                   </a>

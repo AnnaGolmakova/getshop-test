@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 89px var(--padding-page);
+  padding: 124px var(--padding-page);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -22,8 +22,8 @@
 
 .partners__title {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 38.4px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -85,8 +85,8 @@
 }
 
 .partners__item-zyph {
-  width: 101px;
-  height: 70px;
+  width: 102px;
+  height: 71px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -106,8 +106,8 @@
 }
 
 .partners__item-nova {
-  width: 175px;
-  height: 45px;
+  width: 190px;
+  height: 60px;
 }
 
 @media only screen and (max-width: 1024px) {

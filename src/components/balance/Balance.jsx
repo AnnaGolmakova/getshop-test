@@ -10,10 +10,10 @@ export default function Balance() {
       <div className={styles["balance__items"]}>
         <div className={styles["balance__item"]}>
           <h3 className={styles["balance__subtitle"]}>
-            Частотность под контролем
+            Частотность под контролем
           </h3>
           <p className={styles["balance__description"]}>
-            Чтобы не ронять NPS и не увеличивать отток пользователей
+            Чтобы не ронять NPS и не увеличивать отток пользователей
           </p>
         </div>
         <Graphics />
