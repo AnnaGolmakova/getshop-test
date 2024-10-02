@@ -1,40 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GetShop Case Study
+
+This project is a test task implementation of a responsive website using modern web technologies.
+Link to Github Pages: https://annagolmakova.github.io/getshop-test/
+
+## Technologies Used
+
+- Next.js
+- React
+- HTML5
+- CSS3
+- CSS Modules
+
+## Key Features
+
+![Header Animation](/docs/header-animation.gif)
+
+### 1. Sticky Header with Scroll Animation
+
+The project features a sticky header that reveals a shadow effect when scrolling. This is achieved using CSS scroll-linked animations, a modern CSS feature.
+
+```css
+@supports (animation-timeline: scroll()) {
+  .header {
+    animation: scroll-shadow linear both;
+    animation-timeline: scroll();
+    animation-range: 0ex 5ex;
+  }
+
+  @keyframes scroll-shadow {
+    from {
+      box-shadow: none;
+    }
+    to {
+      box-shadow: var(--shadow);
+    }
+  }
+}
+```
+
+### 2. Custom Intersection Observer Hook
+
+A custom React hook `useIntersectionObserver` is implemented to highlight the currently visible section in the navigation menu. This hook utilizes the Intersection Observer API to efficiently track the visibility of multiple elements.
+
+```javascript
+import { useState, useEffect } from "react";
+
+export function useIntersectionObserver(elementIds, options) {
+  const [activeId, setActiveId] = useState(null);
+
+  useEffect(() => {
+    const observers = [];
+    let visibleSections = new Set();
+
+    // ... (implementation details)
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, [elementIds, options]);
+
+  return activeId;
+}
+```
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. Clone the repository
+2. Install dependencies:
+   ```
+   pnpm install
+   ```
+3. Run the development server:
+   ```
+   pnpm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Building and Deployment
+
+To build the project:
+
+```
+pnpm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is configured for deployment to GitHub Pages. To deploy:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+pnpm run deploy
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Additional Notes
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- The project uses CSS Modules for scoped styling.
+- Prettier is configured with a custom CSS order plugin for consistent style formatting.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to explore the code
