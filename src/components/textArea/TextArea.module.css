@@ -5,18 +5,29 @@
   padding: 14px 18px;
   width: 100%;
   resize: none;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 @media only screen and (max-width: 1024px) {
   .text-area {
     height: 220px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
 @media only screen and (max-width: 640px) {
   .text-area {
     height: 223px;
+    font-size: 14px;
+    line-height: 17.85px;
   }
+}
+
+.text-area:focus {
+  outline: none;
+  border: 1px solid;
 }
 
 .text-area::placeholder {
