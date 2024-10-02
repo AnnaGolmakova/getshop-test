@@ -44,15 +44,17 @@ export default function Header() {
           setIsOpen(true);
         }}
       />
-      {isOpen && (
-        <Sidebar
-          onClose={() => {
-            setIsOpen(false);
-          }}
-        >
-          <MenuList isInSidebar />
-        </Sidebar>
-      )}
+      {isOpen &&
+        createPortal(
+          <Sidebar
+            onClose={() => {
+              setIsOpen(false);
+            }}
+          >
+            <MenuList isInSidebar />
+          </Sidebar>,
+          document.body,
+        )}
     </header>
   );
 }
