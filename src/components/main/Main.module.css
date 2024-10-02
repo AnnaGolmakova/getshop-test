@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  background: url("/assets/cover-background.png") no-repeat;
+  background: url("/assets/cover-background.webp") no-repeat;
   padding: 116px var(--padding-page) 95px var(--padding-page);
 }
 

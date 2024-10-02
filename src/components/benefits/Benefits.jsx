@@ -23,7 +23,7 @@ export default function Benefits() {
         <Button className={styles["button-main"]} label="Заказать звонок" />
       </div>
       <Image
-        src="/assets/Screen.png"
+        src="/assets/screen.webp"
         className={styles["benefits__image"]}
         alt="Экран"
         width="721"
