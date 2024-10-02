@@ -5,7 +5,7 @@ export default function Partners() {
   return (
     <section className={styles["partners"]}>
       <h3 className={styles["partners__title"]}>
-        Наши партнеры по монетизации
+        Наши партнеры по монетизации
       </h3>
       <div className={styles["partners__items"]}>
         <Image

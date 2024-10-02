@@ -1,0 +1,90 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background: url("/assets/cover-background.png") no-repeat;
+  padding: 116px var(--padding-page) 95px var(--padding-page);
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    padding: 96px var(--padding-page) 32px var(--padding-page);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main {
+    padding: 67px var(--padding-page) 38px var(--padding-page);
+  }
+}
+
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 0 80px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main__title {
+    margin: 0 0 60px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main__title {
+    margin: 0 0 160px 0;
+  }
+}
+
+.main__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 88px;
+  letter-spacing: -4%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main__title {
+    font-size: 52px;
+    line-height: 57.2px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main__title {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+}
+
+.main__description {
+  max-width: 626px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main__description {
+    max-width: 393px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main__description {
+    font-size: 16px;
+    line-height: 20.4px;
+  }
+}
+
+.button-main {
+  width: 210px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .button-main {
+    width: 100%;
+  }
+}
