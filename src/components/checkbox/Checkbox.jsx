@@ -13,7 +13,7 @@ export default function Checkbox(props) {
         {...props}
       />
       <label className={styles["checkbox__label"]} htmlFor={generatedId}>
-        {props.label}
+        <span>{props.label}</span>
       </label>
     </div>
   );
