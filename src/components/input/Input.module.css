@@ -24,10 +24,22 @@
 @media only screen and (max-width: 640px) {
   .input {
     padding: 6px 0 14px 0;
+    height: 40px;
   }
 }
 
 .input:focus {
   outline: none;
   border-bottom: 1px solid;
+}
+
+.input_error {
+  border-bottom: 1px solid var(--error);
+}
+
+.input__error-txt {
+  color: var(--error);
+  font-size: 10px;
+  line-height: 12.75px;
+  letter-spacing: 0.5px;
 }
