@@ -1,0 +1,125 @@
+.partners {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 89px var(--padding-page);
+}
+
+@media only screen and (max-width: 1024px) {
+  .partners {
+    padding: 46px var(--padding-page) 73px var(--padding-page);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .partners {
+    flex-direction: column;
+    gap: 23px;
+    padding: 60px var(--padding-page) 81px var(--padding-page);
+  }
+}
+
+.partners__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38.4px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .partners__title {
+    font-size: 16px;
+    line-height: 20.4px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .partners__title {
+    align-self: start;
+    font-size: 20px;
+    line-height: 25.5px;
+    text-align: start;
+  }
+}
+
+.partners__items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 81px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .partners__items {
+    gap: 56px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .partners__items {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 2px;
+  }
+}
+
+.partners__item-click {
+  width: 177px;
+  height: 55px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .partners__item-click {
+    width: 121px;
+    height: 37px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .partners__item-click {
+    width: 138px;
+    height: 43px;
+  }
+}
+
+.partners__item-zyph {
+  width: 101px;
+  height: 70px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .partners__item-zyph {
+    width: 70px;
+    height: 48px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .partners__item-zyph {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    width: 84px;
+    height: 58px;
+  }
+}
+
+.partners__item-nova {
+  width: 175px;
+  height: 45px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .partners__item-nova {
+    width: 120px;
+    height: 31px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .partners__item-nova {
+    width: 136px;
+    height: 35px;
+  }
+}
