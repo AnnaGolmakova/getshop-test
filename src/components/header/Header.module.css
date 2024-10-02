@@ -5,6 +5,18 @@
   padding: 48px var(--padding-page) 0 var(--padding-page);
 }
 
+@media only screen and (max-width: 1024px) {
+  .header {
+    padding: 18px var(--padding-page) 0 var(--padding-page);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .header {
+    padding: 32px var(--padding-page) 0 var(--padding-page);
+  }
+}
+
 .header__logo {
   display: grid;
   place-items: center;
