@@ -32,12 +32,39 @@
   right: 0;
 }
 
+@media only screen and (max-width: 640px) {
+  .graphics__line {
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 2px;
+    height: 186px;
+  }
+  .graphics__line::before {
+    top: 0;
+    left: unset;
+    transform: translate(-40%, 0);
+  }
+  .graphics__line::after {
+    right: unset;
+    bottom: 0;
+    transform: translate(-40%, 0);
+  }
+}
+
 .graphics__image {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: url(/assets/rectangle.svg) no-repeat;
+  background-size: 100% 100%;
   width: 120px;
   height: 120px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .graphics__image {
+    width: 80px;
+    height: 80px;
+  }
 }
